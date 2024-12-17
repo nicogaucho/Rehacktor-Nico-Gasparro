@@ -58,7 +58,6 @@ export default function AppGame() {
     event.preventDefault();
     const inputMessage = event.currentTarget;
     const { message } = Object.fromEntries(new FormData(inputMessage));
-    // Sanitize Input...
     if (typeof message === "string" && message.trim().length !== 0) {
       // allora inserisci nel DB
       // se vuoi fare sanitazing input piu serio... ti consiglio una libreria come dompurify o altre...
