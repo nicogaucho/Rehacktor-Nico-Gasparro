@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&display=swap');
+
+* {
+  font-family: "Orbitron", sans-serif !important; 
+}
+
+.reset {
+  margin-top: 20px;
+}
+
+main {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  width: 18%;
+}
+
+.game_container {
+  width: 88%;
+  padding: 20px;
+}
+
+.game_wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  grid-auto-rows: minmax(200px, auto);
+}
+
+.game {
+  border-radius: 2%;
+  width: 100%;
+  animation: fadeIn 2s;
+  img {
+    width: 100%;
+  }
+}
+
+.loading {
+  font-size: 3rem;
+  display: block;
+  margin: 0px auto;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.login_container {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login_element {
+  width: 40%;
+}
+
+.login_icons {
+  margin-left: 10px;
+}
+
+.register_container {
+  height: 80vh;
+  width: 100%; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.register_element {
+  width: 50%;
+}
+
+.error_validation {
+  padding: 0;
+  margin: 0;
+  font-size: 15px;
+  color: red !important;
+}
+
+.game_detail_wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.game_info {
+  width: 60%;
+  padding: 10px;
+}
+
+.game_media {
+  width: 40%;
+  padding: 10px;
+}
+
+.autoSuggestedWrapper {
+  height: 250px;
+  overflow-y: scroll;
+}
+
+.user_card {
+  width: 100%;
+  display: flex;
+}
+
+.dati_user {
+  width: 50%;
+}
+
+.info_user {
+  width: 50%;
+}
+
+.chat_game_container {
+  width: 100%;
+  height: 100%;
+}
+
